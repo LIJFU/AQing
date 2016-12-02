@@ -1,0 +1,118 @@
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/space_1"
+          android:background="#eee"/>
+
+      <LinearLayout
+          android:id="@+id/main_foot"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_gravity="center"
+          android:paddingLeft="@dimen/space_12"
+          android:gravity="center"
+          android:background="@drawable/white_line_border"
+          android:orientation="horizontal">
+
+               <LinearLayout
+                   android:id="@+id/play_bar_content_root"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <com.xiaoyuan54.child.edu.app.widget.CircleImageView
+                       android:id="@+id/play_bar_cover"
+                       android:layout_width="45dp"
+                       android:layout_height="45dp"
+                       android:src="@mipmap/ic_launcher"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:paddingLeft="@dimen/space_10"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:id="@+id/play_bar_title"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black_alpha_144"
+                           android:textSize="@dimen/text_size_16"
+                           android:maxLines="1"
+                           android:marqueeRepeatLimit="marquee_forever"
+                           android:ellipsize="marquee"
+                           android:scrollHorizontally="true"
+                           tools:text="虫儿飞"/>
+
+                       <TextView
+                           android:id="@+id/play_bar_subtitle"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/space_3"
+                           android:textColor="@color/main_gray"
+                           android:textSize="@dimen/text_size_12"
+                           android:maxLines="1"
+                           android:ellipsize="end"
+                           tools:text="吃了会变媛"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/play_bar_list"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/play_list"/>
+
+                    <Space
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/play_bar_play"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@mipmap/play"/>
+
+                    <Space
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/play_bar_next"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/play_next"/>
+
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+
+ </LinearLayout>
+
+
+

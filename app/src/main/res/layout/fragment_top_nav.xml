@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/transparent"
+    tools:context=".improve.main.nav.TopNavFragment">
+
+    <com.xiaoyuan54.child.edu.app.improve.main.nav.TopNavigationButton
+        android:id="@+id/nav_item_music"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/lay_12"
+        android:paddingRight="@dimen/lay_12" />
+
+    <com.xiaoyuan54.child.edu.app.improve.main.nav.TopNavigationButton
+        android:id="@+id/nav_item_fables"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/lay_12"
+        android:paddingRight="@dimen/lay_12" />
+
+    <com.xiaoyuan54.child.edu.app.improve.main.nav.TopNavigationButton
+        android:id="@+id/nav_item_me"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/lay_12"
+        android:paddingRight="@dimen/lay_12" />
+</LinearLayout>

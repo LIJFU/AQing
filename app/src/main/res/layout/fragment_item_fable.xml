@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_list_item_margin_tb"
+    android:paddingRight="@dimen/default_list_item_margin_tb"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fable_cover_test"
+        />
+
+    <TextView
+        android:paddingTop="@dimen/fable_list_title_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="掩耳盗铃"
+        android:textSize="@dimen/font_18"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="21dp"
+            android:layout_height="14dp"
+            android:background="@mipmap/eye"
+            />
+
+        <TextView
+            android:paddingTop="@dimen/fable_list_title_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_c5"
+            android:text="已阅10086次"
+            android:textSize="@dimen/font_14"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

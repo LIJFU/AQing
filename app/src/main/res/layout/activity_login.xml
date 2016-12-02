@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/login_padding_left"
+    android:paddingRight="@dimen/login_padding_right"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/login_logo_margin_top"
+        android:layout_width="@dimen/login_logo_size"
+        android:layout_height="@dimen/login_logo_size"
+        android:src="@mipmap/img_login"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="@dimen/space_5"
+        android:paddingBottom="@dimen/space_5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_16"
+            android:layout_height="@dimen/login_input_height"
+            android:hint="@string/login_mobile_hint"
+            android:textColorHint="@color/gray_c5"
+            android:paddingLeft="@dimen/space_15"
+            android:inputType="number"
+            style="@style/login_input"
+            />
+
+        <Button
+            android:layout_marginLeft="@dimen/space_14"
+            android:layout_marginBottom="@dimen/space_3"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_16"
+            android:id="@+id/bt_get_login_code"
+            android:layout_width="@dimen/space_110"
+            android:layout_height="@dimen/login_input_height"
+            android:background="@drawable/login_button_login_code"
+            android:text="@string/get_login_code"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="@dimen/space_20"
+        android:id="@+id/et_login_code"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16"
+        android:hint="@string/login_code_hint"
+        android:inputType="number"
+        android:textColorHint="@color/gray_c5"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/space_15"
+        android:layout_height="@dimen/login_input_height"
+        style="@style/login_input"/>
+
+    <Button
+        android:id="@+id/bt_login_commit"
+        android:layout_marginTop="@dimen/space_35"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_commit_height"
+        android:textSize="@dimen/text_size_18"
+        android:background="@drawable/login_button_commit_bg"
+        android:text="@string/login"/>
+
+    <LinearLayout
+        android:id="@+id/ly_promise"
+        android:layout_marginTop="@dimen/space_5"
+        android:paddingTop="@dimen/space_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="right">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/agree"/>
+
+
+        <TextView
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_bf"
+            android:textSize="@dimen/text_size_12"
+            android:text="@string/promise"/>
+        <TextView
+            android:gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_green"
+            android:textSize="@dimen/text_size_12"
+            android:text="@string/promise1"/>
+    </LinearLayout>
+</LinearLayout>

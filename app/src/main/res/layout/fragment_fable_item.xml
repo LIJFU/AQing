@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="160dp"
+    android:paddingBottom="15dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/midden_fable"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="160dp"
+            android:background="@color/transparent_30"
+            android:gravity="center_vertical|left"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:gravity="center"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@mipmap/ic_play_white"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/listen_count"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:text="1122"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/space_3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="爸爸去哪了"
+        android:textSize="@dimen/text_size_14"/>
+
+</LinearLayout>

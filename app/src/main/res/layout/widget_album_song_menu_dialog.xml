@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:layout_marginRight="@dimen/space_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/space_50"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/black_alpha_112"
+                android:textSize="@dimen/text_size_14"
+                android:layout_marginRight="@dimen/space_5"
+                android:text="歌曲:"/>
+
+            <TextView
+                android:id="@+id/song_menu_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/space_2"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/black_alpha_112"
+                android:textSize="@dimen/text_size_14"
+                android:text="白龙马"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0_1"
+            android:background="#eee"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:paddingLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/play_mode_loop_gray"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/space_2"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/black_alpha_176"
+                        android:textSize="@dimen/text_size_14"
+                        android:text="添加到歌单"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0_1"
+                        android:background="#eee"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:paddingLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/play_mode_loop_gray"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/space_2"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/black_alpha_176"
+                        android:textSize="@dimen/text_size_14"
+                        android:text="下载"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0_1"
+                        android:background="#eee"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:paddingLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/play_mode_loop_gray"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/space_2"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/black_alpha_176"
+                        android:textSize="@dimen/text_size_14"
+                        android:text="分享"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0_1"
+                        android:background="#eee"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:paddingLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/play_mode_loop_gray"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/space_2"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/black_alpha_176"
+                        android:textSize="@dimen/text_size_14"
+                        android:text="歌手：未知歌手"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0_1"
+            android:background="#eee"/>
+
+    </LinearLayout>
+
+</LinearLayout>

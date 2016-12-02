@@ -1,0 +1,17 @@
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+     <ListView
+         android:id="@+id/player_lyric_lv"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/transparent"
+         android:divider="@color/transparent"
+         android:scrollbars="none"/>
+
+ </LinearLayout>

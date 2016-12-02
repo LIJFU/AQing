@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_root_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/main_page_bg"
+    android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- search component  start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_35"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_oval_white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_35"
+                        android:drawableLeft="@mipmap/icon_search"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textSize="@dimen/text_size_15"
+                        android:textColor="@color/gray_c5"
+                        android:text="搜索"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- search component  end -->
+
+            <LinearLayout
+                android:id="@+id/lv_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white_alpha_176"
+                android:gravity="center">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <com.xiaoyuan54.child.edu.app.widget.CircleImageView
+                        android:layout_width="@dimen/space_50"
+                        android:layout_height="@dimen/space_50"
+                        android:focusable="false"
+                        android:src="@mipmap/default_header_img"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="@dimen/text_size_17"
+                                 android:textColor="@color/black_alpha_144"
+                                 android:text="吃了会变媛"/>
+
+                             <ImageView
+                                 android:layout_marginLeft="5dp"
+                                 android:layout_width="@dimen/space_18"
+                                 android:layout_height="@dimen/space_18"
+                                 android:src="@mipmap/girl"/>
+
+                         </LinearLayout>
+
+
+                        <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:paddingTop="@dimen/space_3"
+                             android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_12"
+                                android:text="汇聚最全最热门的儿歌"/>
+
+                         </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|right"
+                            android:paddingRight="@dimen/space_6">
+
+                            <ImageView
+                                android:layout_width="@dimen/space_20"
+                                android:layout_height="@dimen/space_20"
+                                android:src="@mipmap/vip_gray"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gray_c5"
+                                android:textSize="@dimen/text_size_11"
+                                android:text="开通"/>
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_20"
+                            android:scaleType="center"
+                            android:src="@mipmap/right" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- point and level start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:orientation="horizontal"
+                    android:background="@drawable/white_line_border">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_16"
+                            android:textAlignment="center"
+                            android:layout_marginRight="4dp"
+                            android:textColor="@color/main_green"
+                            android:text="10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_17"
+                            android:textAlignment="center"
+                            android:text="岁"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_0_5"
+                        android:layout_height="match_parent"
+                        android:background="@color/list_divider_color">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginRight="4dp"
+                            android:textSize="@dimen/text_size_16"
+                            android:textColor="@color/main_green"
+                            android:text="100" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_17"
+                            android:textAlignment="center"
+                            android:text="豆豆币"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+               <!-- point and level end-->
+
+            </LinearLayout>
+
+            <!-- page menu start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="@dimen/space_12"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/main_my_music_root"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/icon_my_music"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本地音乐"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_my_fable_root"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/icon_my_story"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_14"
+                        android:text="本地故事" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_my_collection_root"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/icon_my_collect"/>
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的收藏"
+                        android:textSize="@dimen/font_14"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_my_down_root"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/icon_my_download"/>
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下载管理"
+                        android:textSize="@dimen/font_14"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- page menu end -->
+
+
+            <!-- recommend story start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_12"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="@dimen/space_15"
+                android:background="@drawable/white_line_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:background="@color/white">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_14"
+                        android:text="热门推荐"/>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical|right"
+                        android:textSize="@dimen/text_size_14"
+                        android:textColor="@color/main_green"
+                        android:text="更多"/>
+
+                </LinearLayout>
+
+                <GridView
+                    android:id="@+id/fable_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:focusable="false"
+                    android:horizontalSpacing="@dimen/space_8">
+                </GridView>
+
+            </LinearLayout>
+            <!-- recommend story end -->
+
+        </LinearLayout>
+</ScrollView>

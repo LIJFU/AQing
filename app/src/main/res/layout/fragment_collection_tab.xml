@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_action_bar"></include>
+
+    <com.xiaoyuan54.child.edu.app.widget.PagerSlidingTabStrip
+        android:id="@+id/pager_tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:background="?attr/windows_bg"
+        app:allowWidthFull="true"
+        app:slidingBlock="?attr/sliding_block_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+
+        style="@style/fill_fill"
+        android:layout_below="@id/view_pager_line" />
+
+
+    <com.xiaoyuan54.child.edu.app.ui.empty.EmptyLayout
+        android:visibility="gone"
+        android:id="@+id/error_layout"
+        style="@style/fill_fill" />
+
+
+</LinearLayout>

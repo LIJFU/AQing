@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical|right"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:textSize="@dimen/done_label_size"
+        android:id="@+id/cancel"
+        android:textColor="@color/gray_bf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dip"
+        android:text="取消"
+        android:background="@color/transparent"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <Button
+        android:textSize="@dimen/done_label_size"
+        android:textColor="@color/main_green"
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dip"
+        android:text="完成"
+        android:background="@color/transparent"
+        style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

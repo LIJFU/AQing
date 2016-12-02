@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_navigation_bar_height"
+    android:gravity="center_vertical"
+    android:background="@color/main_green"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/more_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:minHeight="@dimen/space_60"
+            android:elevation="0dp"
+            android:clipToPadding="true"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/tool_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:text="替换标题"
+                />
+            <Button
+                android:background="@color/trans"
+                android:id="@+id/action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/action_button_padding"
+                android:paddingRight="@dimen/action_button_padding"
+                android:visibility="gone"
+                android:text="完成" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>
